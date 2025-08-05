@@ -1,4 +1,4 @@
-# 🧠 Finday Face Verification Server
+# Finday Face Verification Server
 
 > Finday 프로젝트의 **얼굴 인증 전용 Flask API 서버**입니다.  
 > 사용자의 웹캠으로 촬영된 실시간 이미지와, 등록된 얼굴 이미지(S3 저장)를  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 프로젝트 역할
+## 프로젝트 역할
 
 이 서버는 Finday의 **2단계 로그인 인증(얼굴 인증)** 기능을 처리합니다.  
 1차 로그인(이메일/비밀번호) 후, **웹캠으로 촬영한 얼굴 이미지**와  
@@ -14,7 +14,7 @@
 
 ---
 
-## 🔐 얼굴 인증 흐름
+## 얼굴 인증 흐름
 
 Finday 프론트엔드에서는 먼저 얼굴을 인식한 후 자동으로 캡처하고,  
 해당 캡처 이미지를 이 Flask 서버에 전송하여 실제 유사도 비교를 수행합니다.
@@ -30,7 +30,7 @@ Finday 프론트엔드에서는 먼저 얼굴을 인식한 후 자동으로 캡�
 
 ---
 
-## 📹 얼굴 인증 시연 영상
+## 얼굴 인증 시연 영상
 
 아래 영상에서는 Finday의 **얼굴 인증 로그인 흐름**을 확인할 수 있습니다.
 
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/99ca538e-69ec-457e-98d1-bcc9b9bfeec3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-## 🛠️ 기술 스택
+## 🛠기술 스택
 
 | 항목 | 내용 |
 |------|------|
@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/99ca538e-69ec-457e-98d1-bcc9b9bfeec3
 
 ---
 
-## 📂 프로젝트 구조
+## 프로젝트 구조
 
 ```
 finday-face-verification/
@@ -65,7 +65,7 @@ finday-face-verification/
 
 ---
 
-## 🧪 API 명세
+## API 명세
 
 ### [POST] `/verify-face`
 
@@ -123,8 +123,11 @@ __pycache__/
 .env
 ```
 
-📎 관련 레포지토리
-이름	설명
-Finday Backend	사용자, 거래, 계좌 관리 등의 핵심 API 서버
-Finday Frontend	React 기반의 사용자 인터페이스
-Finday KFTC Gateway	은행 서버 중계 역할의 API 서버
+## 관련 레포지토리
+
+| 서비스 | 레포지토리 |
+|--------|-------------|
+| 🌐 Finday 프론트엔드 | [`finday-frontend`](https://github.com/your-username/finday-frontend) |
+| 🧠 Finday 백엔드 | [`finday-backend`](https://github.com/your-username/finday-backend) |
+| 💳 국민은행 서버 | [`finday-bank-kb`](https://github.com/your-username/finday-bank-kb) |
+| 💳 신한은행 서버 | [`finday-bank-shinhan`](https://github.com/your-username/finday-bank-shinhan) |
