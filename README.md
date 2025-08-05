@@ -46,12 +46,14 @@ Finday 프론트엔드에서는 먼저 얼굴을 인식한 후 자동으로 캡�
 
 ## 📂 프로젝트 구조
 
+```
 finday-face-verification/
 ├── app.py # Flask 메인 서버
 ├── config.py # AWS 키 등 민감 정보 분리 (git ignore)
 ├── config.py.example # 환경 설정 예시
 ├── requirements.txt # 의존성 목록
 └── README.md # 프로젝트 설명
+```
 
 ---
 
