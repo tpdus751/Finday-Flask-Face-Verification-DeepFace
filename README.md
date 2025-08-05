@@ -6,20 +6,6 @@
 
 ---
 
-## 🛠️ 기술 스택
-
-
-| 항목 | 내용 |
-|------|------|
-| **백엔드 프레임워크** | Flask |
-| **AI 모델** | DeepFace (`ArcFace` + `RetinaFace`) |
-| **이미지 처리** | OpenCV, NumPy |
-| **스토리지** | AWS S3 |
-| **요청 전송** | requests, Flask `request.files` |
-| **CORS** | flask-cors (모든 Origin 허용) |
-
----
-
 ## 📌 프로젝트 역할
 
 이 서버는 Finday의 **2단계 로그인 인증(얼굴 인증)** 기능을 처리합니다.  
@@ -41,6 +27,28 @@ Finday 프론트엔드에서는 먼저 얼굴을 인식한 후 자동으로 캡�
 4. Flask 서버에 캡처 이미지 + 등록 이미지(S3 URL) 전송
 5. DeepFace(ArcFace)로 유사도 비교 수행
 6. 인증 성공 여부(`success`, `distance`, `threshold`) 반환
+
+---
+
+## 📹 얼굴 인증 시연 영상
+
+아래 영상에서는 Finday의 **얼굴 인증 로그인 흐름**을 확인할 수 있습니다.
+
+https://github.com/user-attachments/assets/99ca538e-69ec-457e-98d1-bcc9b9bfeec3
+
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+## 🛠️ 기술 스택
+
+| 항목 | 내용 |
+|------|------|
+| **백엔드 프레임워크** | Flask |
+| **AI 모델** | DeepFace (`ArcFace` + `RetinaFace`) |
+| **이미지 처리** | OpenCV, NumPy |
+| **스토리지** | AWS S3 |
+| **요청 전송** | requests, Flask `request.files` |
+| **CORS** | flask-cors (모든 Origin 허용) |
 
 ---
 
